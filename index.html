@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" type="image/png" href="d.png">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+        <title>Destroy Your Keyboard!!!</title>
+    </head>
+
+    <body>
+        <audio id="audio" controls autoplay loop hidden>
+            <source src="audio.mp3" type="audio/mp3">
+        </audio>
+        <script>
+        var audio = document.getElementById("audio");
+            audio.volume = 0.4;
+        </script>
+
+        <div class="flexbox-container">
+            <h1>Destroy Your Keyboard!!!</h1>
+            <div class="flexbox-item instructions"><br>
+                Type each appearing word in 3 seconds.<br> To start again, type the current word.<br></div>
+            <div class="flexbox-item time">Countdown: <span id="time">0</span></div>
+            <div class="tampilanKata"><p><span id="tampilanKata"></span></p></div>
+            <div class="inputanKata"><input type="text" id="inputanKata" placeholder="typing..."></div>
+            <div class="flexbox-item alerts"><h3></h3><span id="alerts"></span></div>
+            <div class="flexbox-item skor">Score: <span id="skor">0</span></div>
+            <div class="flexbox-item hitung hidden"><span id="hitung" hidden>60</span></div>
+        </div>
+          
+        <script src="gamescript.js"></script>
+        
+    </body>
+
+</html>
